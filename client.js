@@ -15,6 +15,8 @@ ipc.on('md', function (raw) {
   const body = document.querySelector('.markdown-body')
   base.setAttribute('href', remote.getGlobal('baseUrl'))
   body.innerHTML = md
+  console.log(md)
+  body.innerHTML = "<h1>Hello Wolrd</h1>"
 })
 
 window.addEventListener('keydown', function (ev) {
